@@ -1,0 +1,7 @@
+###
+### GMS integration
+###
+upstream 6861391ff34eff423974a73c46cf0b186a6cb335
+	sna: Make sure that cached upload proxies are marked as all-damaged
+kw/68223 ffc05ce017d6ee5e8ed717406491819bb5e2e07e
+	dna/dri2: Fix possible null dereference
