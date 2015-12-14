@@ -1,0 +1,7 @@
+###
+### GMS integration
+###
+upstream 6c4ffba39acb114cbbbfa3359a8c1ba7dfcc7df6
+	sna: Don't disable the native backlight around modesets
+kw/68223 ffc05ce017d6ee5e8ed717406491819bb5e2e07e
+	dna/dri2: Fix possible null dereference
