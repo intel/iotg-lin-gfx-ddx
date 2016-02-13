@@ -1,0 +1,9 @@
+###
+### GMS integration
+###
+upstream de7407d20703615c5bf0b1d9f522e93dcc13ba82
+	test/dri2-race: Add a set of races against Client death
+kw/68223 ffc05ce017d6ee5e8ed717406491819bb5e2e07e
+	dna/dri2: Fix possible null dereference
+hsd/1504134673 9b4488f2453e2e3e8831906c2103631e6a807c95
+	Add NULL checking for drawable in sna_dri2_flip_event
