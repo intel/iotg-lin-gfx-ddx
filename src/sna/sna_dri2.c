@@ -3376,7 +3376,7 @@ skip:
 	if (crtc && sna_crtc_is_on(crtc)) {
 		if (info == NULL)
 			info = sna_dri2_add_event(sna, draw, client, crtc);
-		if (info != dri2_chain(draw))
+		if (!info || info != dri2_chain(draw))
 			goto fake;
 
 		assert(info->crtc == crtc);
