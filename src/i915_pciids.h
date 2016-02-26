@@ -296,7 +296,8 @@
 #define INTEL_BXT_IDS(info) \
 	INTEL_VGA_DEVICE(0x0A84, info), \
 	INTEL_VGA_DEVICE(0x1A84, info), \
-	INTEL_VGA_DEVICE(0x5A84, info)
+	INTEL_VGA_DEVICE(0x5A84, info), \
+	INTEL_VGA_DEVICE(0x5A85, info)
 
 #define INTEL_KBL_GT1_IDS(info)	\
 	INTEL_VGA_DEVICE(0x5913, info), /* ULT GT1.5 */ \
