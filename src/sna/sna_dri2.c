@@ -278,9 +278,9 @@ sna_dri2_get_back(struct sna *sna,
 
 	bo = NULL;
 	list_for_each_entry(c, &priv->cache, link) {
+		assert(c->bo);
 		DBG(("%s: cache: handle=%d, active=%d\n",
 		     __FUNCTION__, c->bo ? c->bo->handle : 0, c->bo ? c->bo->active_scanout : -1));
-		assert(c->bo);
 		if (c->bo->active_scanout == 0) {
 			bo = c->bo;
 			name = c->name;
