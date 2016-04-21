@@ -1,0 +1,7 @@
+###
+### GMS integration
+###
+upstream 46caee86db0fb32b16213893c79d9c1a21ed0883
+	sna: Fix reporting of errno after setcrtc failure
+hsd/1504134673 9b4488f2453e2e3e8831906c2103631e6a807c95
+	Add NULL checking for drawable in sna_dri2_flip_event
