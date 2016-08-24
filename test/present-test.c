@@ -1709,7 +1709,7 @@ static uint32_t gem_create(int fd, int size)
 {
 	struct drm_i915_gem_create create;
 
-	create.handle = 0;
+	memset(&create, 0, sizeof(create));
 	create.size = size;
 	(void)drmIoctl(fd, DRM_IOCTL_I915_GEM_CREATE, &create);
 
