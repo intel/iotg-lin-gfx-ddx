@@ -646,8 +646,7 @@ static uint32_t gem_create(int fd, int size)
 
 	assert((size & 4095) == 0);
 
-	VG_CLEAR(create);
-	create.handle = 0;
+	memset(&create, 0, sizeof(create));
 	create.size = size;
 	(void)drmIoctl(fd, DRM_IOCTL_I915_GEM_CREATE, &create);
 

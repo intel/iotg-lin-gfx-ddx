@@ -862,8 +862,7 @@ static uint32_t gem_create(int fd, int num_pages)
 {
 	struct drm_i915_gem_create create;
 
-	VG_CLEAR(create);
-	create.handle = 0;
+	memset(&create, 0, sizeof(create));
 	create.size = PAGE_SIZE * num_pages;
 	(void)do_ioctl(fd, DRM_IOCTL_I915_GEM_CREATE, &create);
 

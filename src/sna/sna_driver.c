@@ -406,8 +406,7 @@ static Bool fb_supports_depth(int fd, int depth)
 	if (res.count_crtcs == 0)
 		return TRUE;
 
-	VG_CLEAR(create);
-	create.handle = 0;
+	memset(&create, 0, sizeof(create));
 	create.size = 4096;
 	if (drmIoctl(fd, DRM_IOCTL_I915_GEM_CREATE, &create))
 		return FALSE;
