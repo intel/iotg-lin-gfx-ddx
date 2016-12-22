@@ -2948,6 +2948,10 @@ static void sna_dri2_flip_event(struct sna_dri2_event *flip)
 	case FLIP_THROTTLE:
 		if (flip->signal) {
 			DBG(("%s: triple buffer swap complete, unblocking client\n", __FUNCTION__));
+			if(flip->draw == NULL) {
+				sna_dri2_event_free(flip);
+				break;
+			}
 			frame_swap_complete(flip, DRI2_FLIP_COMPLETE);
 		}
 	case FLIP_COMPLETE:
