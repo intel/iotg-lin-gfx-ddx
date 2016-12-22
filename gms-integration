@@ -1,0 +1,9 @@
+###
+### GMS integration
+###
+upstream 169c74fa6c2cd9c28dd7bfacd9639cd245b8c8a8
+	intel: Adding Marketing names for Skylake, Kabylake and Apollolake/Broxton.
+hsd/1504134673 9b4488f2453e2e3e8831906c2103631e6a807c95
+	Add NULL checking for drawable in sna_dri2_flip_event
+topic/vpg_stolen ed6285a9d39938572f40ba548625ff391ef0af9c
+	sna: Always clear entire gem create ioctl data
